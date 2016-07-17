@@ -1,0 +1,24 @@
+{
+  "name": "Finomena-Assignment",
+  "version": "1.0.0",
+  "description": "Realtime web server for game",
+  "author": "Anil Kumar",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "",
+    "config": "",
+    "connect-flash": "",
+    "cookie-parser": "",
+    "debug": "",
+    "express": "",
+    "express-session": "",
+    "hbs": "",
+    "lodash": "",
+    "moment": "",
+    "morgan": "",
+    "passport": "",
+    "passport-local": "",
+    "serve-favicon": "",
+    "socket.io": ""
+  }
+}

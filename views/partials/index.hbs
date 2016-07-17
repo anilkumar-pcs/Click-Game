@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="row">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                        <div class="col-md-6">
+                            <form class="form-horizontal" action="/play" method="post">
+                                <fieldset>
+                                <input id="userin" name="user" type="text" placeholder="Enter name here" required class="form-control input-md" autocomplete="off"></br>
+                                <input id="keyin" name="key" type="text" placeholder="Enter key here" required class="form-control input-md" autocomplete="off"></br>
+                                <button type="submit" id="joinbutton" class="btn btn-info ">Join</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                        <div class="col-md-6" >
+                            <form class="form-horizontal" action="/play" method="post">
+                                <fieldset>
+                                <input id="user" name="user" type="text" placeholder="Your Name" required class="form-control input-md" autocomplete="off"></br>
+								<input id="rows" name="rows" type="number" placeholder="No of Rows" required class="form-control input-sm" value="5" min="1" max="10">
+								</br>
+								<input id="cols" name="cols" type="number" placeholder="No of Cols" required class="form-control input-sm" value="5" min="1" max="10">
+								</br>
+								<input id="minPlayers" name="minPlayers" type="number" placeholder="Min players to start the Game" required class="form-control input-sm" value="2" min="2" max="10">
+                                </br>
+								<input id="freezeTime" name="freezeTime" type="number" placeholder="Seconds to freeze the screen" required class="form-control input-sm" value="2" min="1" max="10">
+								</br>
+								<button type="submit" class="btn btn-success">New-Game</button> 
+                                </fieldset>
+                            </form>                
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{ footer_title }}</h3>
+        </div>
+        <div class="panel-body">
+            <blockquote>
+                <p>{{ footer_content }}</p>
+            </blockquote>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/join.js"></script>

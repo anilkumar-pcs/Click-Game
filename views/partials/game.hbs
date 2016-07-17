@@ -1,0 +1,24 @@
+<br/>
+<div id="overlay"></div>
+<div class="row">
+	<div class="row" style="margin-bottom : 10px;">
+		<div class="col-md-2"></div>
+		<div class="col-md-8"></div>
+		<div class="col-md-2">
+			{{#if isHost}}
+				<div id="gameInfo" data-rows="{{ rows }}" data-cols="{{ cols }}" data-minPlayers="{{ minPlayers }}" data-freezeTime="{{ freezeTime }}"></div>
+				<button class="btn btn-primary" id="startGame">Start Game</button>
+			{{/if}}
+		</div>
+	</div>
+    <div class="col-md-2" id="sideScreenL"></div>
+    <div class="col-md-8"  id="mainScreen" data-token="{{ token }}" data-user="{{ user }}" data-host="{{ isHost }}">
+    </div>
+    <div class="col-md-2">
+		<ul class="list-group" id="sideScreenR">
+		
+		</ul>
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/{{ js }}"></script>
